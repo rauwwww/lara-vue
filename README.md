@@ -12,3 +12,5 @@ $ docker-compose up
 ## Documentation:
 
 Auth/passport - https://laravel.com/docs/5.6/passport
+
+SASS pattern guidelines - https://sass-guidelin.es/#the-7-1-pattern
