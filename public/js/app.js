@@ -627,7 +627,7 @@ eval("/* WEBPACK VAR INJECTION */(function(process) {\r\nObject.defineProperty(e
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar vue_1 = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\r\nvar vue_router_1 = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.esm.js\");\r\nvar Home_vue_1 = __webpack_require__(/*! ../pages/Home.vue */ \"./resources/js/pages/Home.vue\");\r\nvue_1.default.use(vue_router_1.default);\r\nexports.routeCatchall = {\r\n    path: '*',\r\n    redirect: '/home',\r\n};\r\nexports.routeHome = {\r\n    path: '/',\r\n    name: 'home',\r\n    component: Home_vue_1.default,\r\n};\r\nexports.routes = [exports.routeCatchall];\r\n\n\n//# sourceURL=webpack:///./resources/js/router/routes.ts?");
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar vue_1 = __webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.esm.js\");\r\nvar vue_router_1 = __webpack_require__(/*! vue-router */ \"./node_modules/vue-router/dist/vue-router.esm.js\");\r\nvar Home_vue_1 = __webpack_require__(/*! ../pages/Home.vue */ \"./resources/js/pages/Home.vue\");\r\nvue_1.default.use(vue_router_1.default);\r\nexports.routeCatchall = {\r\n    path: '*',\r\n    redirect: '/home',\r\n};\r\nexports.routeHome = {\r\n    path: '/',\r\n    name: 'home',\r\n    component: Home_vue_1.default,\r\n};\r\nexports.routes = [exports.routeCatchall, exports.routeHome];\r\n\n\n//# sourceURL=webpack:///./resources/js/router/routes.ts?");
 
 /***/ }),
 

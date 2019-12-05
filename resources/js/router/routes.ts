@@ -15,4 +15,4 @@ export const routeHome = {
   component: Home,
 };
 
-export const routes = [routeCatchall];
+export const routes = [routeCatchall, routeHome];
