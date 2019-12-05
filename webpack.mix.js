@@ -12,21 +12,17 @@ const mix = require('laravel-mix');
  */
 
 
-mix.ts('resources/assets/js/app.js', 'public/js')
+mix.ts('resources/assets/js/app.ts', 'public/js')
     .webpackConfig({
-         module: {
-             rules: [
-                 {
-                     test: /\.jsx?$/,
-                     exclude: /node_modules(?!\/foundation-sites)|bower_components/,
-                     use: [
-                         {
-                             loader: 'babel-loader',
-                             options: Config.babel()
-                         }
-                     ]
-                 }
-             ]
-         }
-     })
-   .sass('resources/assets/sass/app.scss', 'public/css');
+        module: {
+            rules: [{
+                test: /\.jsx?$/,
+                exclude: /node_modules(?!\/foundation-sites)|bower_components/,
+                use: [{
+                    loader: 'babel-loader',
+                    options: Config.babel()
+                }]
+            }]
+        }
+    })
+    .sass('resources/assets/sass/app.scss', 'public/css');

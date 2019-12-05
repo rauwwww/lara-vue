@@ -1,17 +1,16 @@
-
-
 import Vue from 'vue';
-import router from './router';
-import ExampleComponent from "./components/ExampleComponent.vue"
+import router from './router/router';
 import store from './store';
-import 'jquery'
+import 'jquery';
 
 // plugins
 import './plugins/axios';
 
 try {
-    require('foundation-sites');
-} catch (e) {}
+  require('foundation-sites');
+} catch (e) {
+  console.log(e, +'err from foundation');
+}
 
 /**
  * The following block of code may be used to automatically register your
@@ -24,8 +23,6 @@ try {
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -33,7 +30,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
  */
 
 const app = new Vue({
-    router,
-    store,
-    el: '#app',
-});
+  router,
+  store,
+}).$mount('#app');
