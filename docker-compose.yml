@@ -1,13 +1,13 @@
-version: "3.6"
+version: '3.6'
 services:
-  app:
-    image: php:alpine
-    volumes:
-      - "./:/app"
-    working_dir: /app
-    command: "php artisan serve --host=0.0.0.0 --port=8000"
-    ports:
-      - 8000:8000
+  # app:
+  #   image: php:alpine
+  #   volumes:
+  #     - "./:/app"
+  #   working_dir: /app
+  #   command: "php artisan serve --host=0.0.0.0 --port=8000"
+  #   ports:
+  #     - 8000:8000
   #MySQL Service
   db:
     image: mysql:5.7
@@ -15,7 +15,7 @@ services:
     restart: unless-stopped
     tty: true
     ports:
-      - "3306:3306"
+      - '3306:3306'
     environment:
       MYSQL_DATABASE: homestead
       MYSQL_USER: root
@@ -26,4 +26,3 @@ services:
 
 volumes:
   db_data:
-
