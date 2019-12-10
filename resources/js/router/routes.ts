@@ -1,9 +1,5 @@
-import Vue from 'vue';
-import Router from 'vue-router';
 import Home from '../pages/Home.vue';
-import RouteConfig from '../types/vue-router';
-
-Vue.use(Router);
+import {RouteConfig} from 'vue-router';
 
 export const routeCatchall: RouteConfig = {
 	path: '*',

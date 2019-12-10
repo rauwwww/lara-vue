@@ -6,9 +6,9 @@ import {routes} from './routes';
 Vue.use(Router);
 
 const router = new Router({
-  mode: 'history',
-  base: process.env.BASE_URL,
-  routes,
+	mode: 'history',
+	base: process.env.BASE_URL,
+	routes,
 });
 
 // const waitForStorageToBeReady = async (to, from, next) => {
